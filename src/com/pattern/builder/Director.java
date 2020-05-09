@@ -1,0 +1,21 @@
+package com.pattern.builder;
+
+/**
+ * ’{∂»’ﬂ
+ * 
+ * @author SEN.CHEN
+ *
+ */
+public class Director {
+	private IBuilder builder;
+
+	public Director(IBuilder builder) {
+		this.builder = builder;
+	}
+
+	// ’{∂»Ìò–Ú
+	public void produce() {
+		builder.buildParts();
+		builder.addFun();
+	}
+}
